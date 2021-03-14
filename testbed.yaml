@@ -1,0 +1,133 @@
+devices:
+  SW-1:
+    alias: SW-1
+    connections:
+      cli:
+        ip: 172.16.16.1
+        protocol: ssh
+    credentials:
+      default:
+        password: admin
+        username: admin
+    os: ios
+    platform: ios
+    type: ios
+  SW-10:
+    alias: SW-10
+    connections:
+      cli:
+        ip: 172.16.16.10
+        protocol: ssh
+    credentials:
+      default:
+        password: admin
+        username: admin
+    os: ios
+    platform: ios
+    type: ios
+  SW-2:
+    alias: SW-2
+    connections:
+      cli:
+        ip: 172.16.16.2
+        protocol: ssh
+    credentials:
+      default:
+        password: admin
+        username: admin
+    os: ios
+    platform: ios
+    type: ios
+  SW-3:
+    alias: SW-3
+    connections:
+      cli:
+        ip: 172.16.16.3
+        protocol: ssh
+    credentials:
+      default:
+        password: admin
+        username: admin
+    os: ios
+    platform: ios
+    type: ios
+  SW-4:
+    alias: SW-4
+    connections:
+      cli:
+        ip: 172.16.16.4
+        protocol: ssh
+    credentials:
+      default:
+        password: admin
+        username: admin
+    os: ios
+    platform: ios
+    type: ios
+  SW-5:
+    alias: SW-5
+    connections:
+      cli:
+        ip: 172.16.16.5
+        protocol: ssh
+    credentials:
+      default:
+        password: admin
+        username: admin
+    os: ios
+    platform: ios
+    type: ios
+  SW-6:
+    alias: SW-6
+    connections:
+      cli:
+        ip: 172.16.16.6
+        protocol: ssh
+    credentials:
+      default:
+        password: admin
+        username: admin
+    os: ios
+    platform: ios
+    type: ios
+  SW-7:
+    alias: SW-7
+    connections:
+      cli:
+        ip: 172.16.16.7
+        protocol: ssh
+    credentials:
+      default:
+        password: admin
+        username: admin
+    os: ios
+    platform: ios
+    type: ios
+  SW-8:
+    alias: SW-8
+    connections:
+      cli:
+        ip: 172.16.16.8
+        protocol: ssh
+    credentials:
+      default:
+        password: admin
+        username: admin
+    os: ios
+    platform: ios
+    type: ios
+  SW-9:
+    alias: SW-9
+    connections:
+      cli:
+        ip: 172.16.16.9
+        protocol: ssh
+    credentials:
+      default:
+        password: admin
+        username: admin
+    os: ios
+    platform: ios
+    type: ios
+testbed: {}
+topology: {}

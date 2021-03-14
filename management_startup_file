@@ -1,0 +1,28 @@
+en
+conf ter
+hostname SW-10
+interface vlan 10
+ip address 172.16.16.10 255.255.0.0
+no shut
+exit
+interface gi3/3
+switchport mode access 
+switchport access vlan 10
+exit
+ip domain-name lab.local
+crypto key generate rsa 
+1024
+
+username admin privilege 15 password admin
+
+line vty 0 4
+transport input ssh
+
+exit
+
+line console 0 
+logging synchronous 
+login local
+do wr
+
+
