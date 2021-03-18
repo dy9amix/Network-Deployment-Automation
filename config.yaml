@@ -1,7 +1,4 @@
 ---
-core:
-  num_workers: 100
-
 inventory:
   plugin: NBInventory2
   options:
