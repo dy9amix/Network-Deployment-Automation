@@ -10,7 +10,8 @@ from nornir.core.filter import F
 
 testbedfile = os.path.join('../testbed.yml')
 testbed = Genie.init(testbedfile)
-nr = InitNornir("config.yaml")
+config_files = os.path.join('../config.yaml')
+nr = InitNornir(config_files)
 
 
 def run_parsers(task):
