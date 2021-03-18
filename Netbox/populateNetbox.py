@@ -8,7 +8,8 @@ from nornir import InitNornir
 from nornir_utils.plugins.functions import print_result 
 from nornir.core.filter import F
 
-testbed = Genie.init('testbed.yaml')
+testbedfile = os.path.join('../testbed.yml')
+testbed = Genie.init(testbedfile)
 nr = InitNornir("config.yaml")
 
 
