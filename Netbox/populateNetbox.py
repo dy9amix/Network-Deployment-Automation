@@ -4,7 +4,7 @@ from nornir import InitNornir
 from nornir_utils.plugins.functions import print_result 
 from nornir.core.filter import F
 
-testbed = testbed.load("testbed.yaml")
+testbed = testbed.load('testbed.yaml')
 nr = InitNornir("config.yaml")
 
 
