@@ -26,4 +26,9 @@ def run_parsers(task):
     pprint(output)
 
 def main():
-    nr.run(task=run_parsers)
+    parser_task = nr.run(task=run_parsers)
+    print_result(parser_task)
+
+if __name__ == "__main__":
+    main()
+
