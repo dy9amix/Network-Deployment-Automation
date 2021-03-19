@@ -25,6 +25,7 @@ def run_parsers(task):
     output = device.parse('show interfaces')
     pprint(output)
 
+#Text edit
 def main():
     parser_task = nr.run(task=run_parsers)
     print_result(parser_task)
