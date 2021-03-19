@@ -1,4 +1,5 @@
 from nornir.core.inventory import ConnectionOptions
+from nornir.core.plugins.inventory import TransformFunctionRegister
 
 creds = {
     "SW-1": {"username": "admin", "password": "admin"},
@@ -18,3 +19,5 @@ creds = {
 def adapt_user_password(host):
     host.username = creds[f"{host}"]["username"]
     host.password = creds[f"{host}"]["password"]
+
+TransformFunctionRegister.register("my_transfer_function", adapt_user_password)
