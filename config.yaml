@@ -5,5 +5,5 @@ inventory:
     nb_url: 'http://34.74.171.83:8000/'
     nb_token: '0123456789abcdef0123456789abcdef01234567'
     ssl_verify: False
-  transform_function: 'inventory_script.helpers.adapt_user_password'
+  transform_function: 'user_password'
 
