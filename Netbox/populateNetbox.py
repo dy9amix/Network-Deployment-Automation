@@ -11,7 +11,6 @@ from inventory_script.helpers import adapt_user_password
 from nornir import InitNornir
 from nornir_utils.plugins.functions import print_result 
 from nornir.core.filter import F
-from ssh_config import conf
 
 InventoryPluginRegister.register("user_password",adapt_user_password)
 
@@ -23,9 +22,8 @@ nr = InitNornir(config_files)
 
 def run_parsers(task):
     device = testbed.devices[f'{task.host}']
-    device.connect(ssh_config=conf)
+    device.connect()
     output = device.parse('show interface')
-    pprint(output)
 
 #Text edit
 def main():
