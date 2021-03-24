@@ -1,3 +1,4 @@
+import pprint
 import os
 import sys
 import pprint
@@ -24,7 +25,7 @@ def run_parsers(task):
     device = testbed.devices[f'{task.host}']
     device.connect(log_stdout=False)
     output = device.parse('show interface')
-    print(output)
+    pprint.pprint(output)
 
 #Text edit
 def main():
