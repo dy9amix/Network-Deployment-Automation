@@ -25,7 +25,7 @@ def run_parsers(task):
     device = testbed.devices[f'{task.host}']
     device.connect(log_stdout=False)
     output = device.parse('show interface')
-    return pprint.pprint(output)
+    return output
 
 #Text edit
 def main():
