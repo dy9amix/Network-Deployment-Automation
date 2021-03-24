@@ -22,7 +22,6 @@ nr = InitNornir(config_files)
 
 def run_parsers(task):
     device = testbed.devices[f'{task.host}']
-    device.connect()
     output = testbed.devices[f'{task.host}'].parse('show interface')
     print(output)
 
