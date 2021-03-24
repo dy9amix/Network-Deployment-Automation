@@ -1,0 +1,7 @@
+config ter
+hostname SW-10
+interface mgmt 0
+ip address 172.16.16.10 255.255.0.0
+exit
+copy run start
+

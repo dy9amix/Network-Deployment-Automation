@@ -9,8 +9,8 @@ devices:
       default:
         password: admin
         username: admin
-    os: ios
-    platform: ios
+    os: nxos
+    platform: nxos
     type: ios
   SW-10:
     alias: SW-10
@@ -22,8 +22,8 @@ devices:
       default:
         password: admin
         username: admin
-    os: ios
-    platform: ios
+    os: nxos
+    platform: nxos
     type: ios
   SW-2:
     alias: SW-2
@@ -35,8 +35,8 @@ devices:
       default:
         password: admin
         username: admin
-    os: ios
-    platform: ios
+    os: nxos
+    platform: nxos
     type: ios
   SW-3:
     alias: SW-3
@@ -48,8 +48,8 @@ devices:
       default:
         password: admin
         username: admin
-    os: ios
-    platform: ios
+    os: nxos
+    platform: nxos
     type: ios
   SW-4:
     alias: SW-4
@@ -61,8 +61,8 @@ devices:
       default:
         password: admin
         username: admin
-    os: ios
-    platform: ios
+    os: nxos
+    platform: nxos
     type: ios
   SW-5:
     alias: SW-5
@@ -74,8 +74,8 @@ devices:
       default:
         password: admin
         username: admin
-    os: ios
-    platform: ios
+    os: nxos
+    platform: nxos
     type: ios
   SW-6:
     alias: SW-6
@@ -87,8 +87,8 @@ devices:
       default:
         password: admin
         username: admin
-    os: ios
-    platform: ios
+    os: nxos
+    platform: nxos
     type: ios
   SW-7:
     alias: SW-7
@@ -100,8 +100,8 @@ devices:
       default:
         password: admin
         username: admin
-    os: ios
-    platform: ios
+    os: nxos
+    platform: nxos
     type: ios
   SW-8:
     alias: SW-8
@@ -113,8 +113,8 @@ devices:
       default:
         password: admin
         username: admin
-    os: ios
-    platform: ios
+    os: nxos
+    platform: nxos
     type: ios
   SW-9:
     alias: SW-9
@@ -126,8 +126,8 @@ devices:
       default:
         password: admin
         username: admin
-    os: ios
-    platform: ios
+    os: nxos
+    platform: nxos
     type: ios
 testbed: {}
 topology: {}

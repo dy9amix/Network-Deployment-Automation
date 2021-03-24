@@ -24,7 +24,7 @@ nr = InitNornir(config_files)
 def run_parsers(task):
     device = testbed.devices[f'{task.host}']
     device.connect(ssh_config=conf)
-    output = device.parse('show interfaces')
+    output = device.parse('show ip interface brief')
     pprint(output)
 
 #Text edit
