@@ -17,4 +17,4 @@ def create_management_IP():
     for i in range(4,11):
         netbox.ipam.create_ip_address(address=f'172.16.16.{i}/16',device=i ,assigned_object_type='dcim.interface' ,assigned_object_id=i, assigned_object=i)
 
-create_management_IP()
+print(netbox.dcim.get_devices(name='SW-3')[0]['id'])
