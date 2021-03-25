@@ -40,7 +40,7 @@ def run_parsers(task):
 
 #Text edit
 def main():
-    client_core = nr.filter(role='core')
+    client_core = nr.filter(device_role='core')
     parser_task = client_core.run(task=run_parsers)
     print_result(parser_task)
 
