@@ -25,6 +25,32 @@ devices:
     os: nxos
     platform: nxos
     type: ios
+  SW-11:
+    alias: SW-11
+    connections:
+      cli:
+        ip: 172.16.16.11
+        protocol: ssh
+    credentials:
+      default:
+        password: admin
+        username: admin
+    os: nxos
+    platform: nxos
+    type: ios
+  SW-12:
+    alias: SW-12
+    connections:
+      cli:
+        ip: 172.16.16.12
+        protocol: ssh
+    credentials:
+      default:
+        password: admin
+        username: admin
+    os: nxos
+    platform: nxos
+    type: ios
   SW-2:
     alias: SW-2
     connections:
