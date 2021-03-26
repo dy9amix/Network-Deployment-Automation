@@ -1,0 +1,7 @@
+2021-03-26 06:54:26,789 -  nornir.core -     INFO -        run() - Running task 'run_parsers' with args {} on 1 hosts
+2021-03-26 06:55:34,170 -  nornir.core -  WARNING -        run() - Task 'run_parsers' has not been run – 0 hosts selected
+2021-03-26 06:55:59,373 -  nornir.core -  WARNING -        run() - Task 'run_parsers' has not been run – 0 hosts selected
+2021-03-26 06:56:08,624 -  nornir.core -  WARNING -        run() - Task 'run_parsers' has not been run – 0 hosts selected
+2021-03-26 06:56:39,909 -  nornir.core -  WARNING -        run() - Task 'run_parsers' has not been run – 0 hosts selected
+2021-03-26 07:06:02,639 -  nornir.core -     INFO -        run() - Running task 'run_parsers' with args {} on 2 hosts
+2021-03-26 07:06:36,912 -  nornir.core -     INFO -        run() - Running task 'run_parsers' with args {} on 1 hosts
