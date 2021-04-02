@@ -8,7 +8,8 @@ def configure_vlan(task):
     vlan_config = task.run(task=template_file,
                     template="vlan_config", path="./template_file/")
     task.host["template_config"] = vlan_config.result
-    task.run(task=napalm_configure, configuration=task.host["template_config"])
+    r = task.run(task=napalm_configure, configuration=task.host["template_config"])
+    return r
 
 def configure_vlan_access (task):
     data = task.run(
