@@ -3,6 +3,8 @@ import os
 import re
 from nornir import InitNornir
 from nornir.core.plugins.inventory import InventoryPluginRegister
+from nornir_napalm.plugins.tasks import napalm_get
+
 
 def backup_configuration(task):
     r = task.run(task=napalm_get, getters=["config"],retrieve='running')
