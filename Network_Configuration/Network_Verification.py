@@ -35,7 +35,7 @@ def main():
     print_result(core_task)
     client_access_devices.run(task=config_rollback, on_failed=True, on_good=False)
     client_core_devices.run(task=config_rollback, on_failed=True, on_good=False)
-    client_distribution_devices.run(task=config_rollback, on_failed=True, on_good=False)
+    client_distribution_devices.run(task=rollback_configuration, on_failed=True, on_good=False)
 
 if __name__ == "__main__":
     main()

@@ -9,6 +9,9 @@ def backup_configuration(task):
     run_conf = r.result['config']['running']
   	#erase lines with "Building configuration", "Current Configuration" and "end"
     run_config = re.sub(r'Building configuration.*|Current configuration.*|end','',run_conf)
-    file = open(f"/Backups/{task.host}.conf",'w')
-    file.write(run_config)
-    file.close()
+    filepath = f"/Backups/{task.host}.conf"
+    pathfile = os.getcwd()+filepath
+    f = open(pathfile,"w+")
+    f.write(run_config)
+    f.close()
+    return "Backup successfully taken"

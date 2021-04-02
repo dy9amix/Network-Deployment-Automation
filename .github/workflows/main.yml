@@ -28,7 +28,7 @@ jobs:
         run: |
           cd Network_Configuration
           python3 Network_Deployment.py
-      - name: Configuration Verification
-        run: |
-          cd Network_Configuration
-          python3 Network_Verification.py
+      # - name: Configuration Verification
+      #   run: |
+      #     cd Network_Configuration
+      #     python3 Network_Verification.py

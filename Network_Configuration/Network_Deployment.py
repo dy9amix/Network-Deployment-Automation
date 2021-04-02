@@ -21,15 +21,18 @@ def main():
     client_distribution_devices = nr.filter(F(device_role__name="Distribution"))
     client_core_devices = nr.filter(F(device_role__name="Core"))
     access_task = client_access_devices.run(task=backup_configuration)
-    distribution_task=client_distribution_devices.run(task=backup_configuration)
-    core_task=client_core_devices.run(task=backup_configuration)
-
-    access_task = client_access_devices.run(task=configure_vlan)
     print_result(access_task)
-    distribution_task=client_distribution_devices.run(task=configure_vlan)
+    distribution_task=client_distribution_devices.run(task=backup_configuration)
     print_result(distribution_task)
-    core_task=client_core_devices.run(task=configure_vlan)
+    core_task=client_core_devices.run(task=backup_configuration)
     print_result(core_task)
+
+    # access_task = client_access_devices.run(task=configure_vlan)
+    # print_result(access_task)
+    # distribution_task=client_distribution_devices.run(task=configure_vlan)
+    # print_result(distribution_task)
+    # core_task=client_core_devices.run(task=configure_vlan)
+    # print_result(core_task)
 
 if __name__ == "__main__":
     main()
