@@ -30,3 +30,6 @@ def main():
     print_result(distribuition_task)
     core_task=client_core_devices.run(task=configure_vlan)
     print_result(core_task)
+
+if __name__ == "__main__":
+    main()

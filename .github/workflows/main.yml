@@ -31,4 +31,4 @@ jobs:
       - name: Configuration Verification
         run: |
           cd Network_Configuration
-          python3 Network_Verification
+          python3 Network_Verification.py
