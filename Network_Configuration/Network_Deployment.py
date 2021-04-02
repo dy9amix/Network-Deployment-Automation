@@ -18,7 +18,7 @@ nr = InitNornir(config_files)
 
 def main():
     client_access_devices = nr.filter(F(device_role__name="Access"))
-    client_distribution_devices = nr.filter(F(device_role__name="Distribuition"))
+    client_distribution_devices = nr.filter(F(device_role__name="Distribution"))
     client_core_devices = nr.filter(F(device_role__name="Core"))
     access_task = client_access_devices.run(task=backup_configuration)
     distribution_task=client_distribution_devices.run(task=backup_configuration)
@@ -27,7 +27,7 @@ def main():
     access_task = client_access_devices.run(task=configure_vlan)
     print_result(access_task)
     distribution_task=client_distribution_devices.run(task=configure_vlan)
-    print_result(distribuition_task)
+    print_result(distribution_task)
     core_task=client_core_devices.run(task=configure_vlan)
     print_result(core_task)
 
