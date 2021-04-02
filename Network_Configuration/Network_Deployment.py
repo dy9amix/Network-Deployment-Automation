@@ -12,9 +12,6 @@ from Nornir_Configuration.Backup_configuration import backup_configuration
 from nornir.core.filter import F
 
 InventoryPluginRegister.register("user_password",adapt_user_password)
-
-testbedfile = os.path.join('../testbed.yml')
-testbed = Genie.init(testbedfile)
 config_files = os.path.join('../config.yaml')
 nr = InitNornir(config_files)
 
