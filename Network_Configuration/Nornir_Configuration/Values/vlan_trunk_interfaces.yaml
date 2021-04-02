@@ -1,0 +1,17 @@
+---
+interface:
+  access:
+    - name: Ethernet2/1
+    - name: Ethernet2/2
+    - name: Ethernet2/3
+    - name: Ethernet2/4
+  distribution:
+    - name: Ethernet2/1
+    - name: Ethernet2/2
+    - name: Ethernet2/3
+    - name: Ethernet2/4
+    - name: Ethernet2/5
+  core:
+    - name: Ethernet2/1
+    - name: Ethernet2/2
+    - name: Ethernet2/3

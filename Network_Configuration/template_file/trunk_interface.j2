@@ -1,0 +1,7 @@
+{% for n in interface %}
+interface {n.name}
+  switchport
+  switchport mode trunk
+  switchport trunk allowed vlan 10,22,35,40,44
+  no shutdown
+{% endof %}

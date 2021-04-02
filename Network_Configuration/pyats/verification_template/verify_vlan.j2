@@ -1,0 +1,19 @@
+# Name of the testcase
+TestVLANConfiguration:
+    # Location of the blitz trigger - always this same location for all blitz trigger
+    source:
+      pkg: genie.libs.sdk
+      class: triggers.blitz.blitz.Blitz
+
+    # Devices to run on - Default is uut
+    devices: {device}
+
+    # Field containing all the Testcase sections
+    test_sections:
+        - verify_configuration:
+            - parse:
+                device: {device}
+                banner: Verify all vlans are configured on the switch 
+                command: show vlan
+                include:
+                    - contains(2,3,4,5,6,7,8,9)

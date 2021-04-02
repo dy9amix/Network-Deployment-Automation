@@ -1,0 +1,389 @@
+2021-04-02 11:29:03,255 -  nornir.core -     INFO -        run() - Running task 'main' with args {} on 1 hosts
+2021-04-02 11:29:03,260 - nornir.core.task -    ERROR -      start() - Host 'NX-OS Testbed': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 42, in template_file
+    t = env.get_template(template)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 197, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: trunk_interface
+
+2021-04-02 11:29:03,260 - nornir.core.task -    ERROR -      start() - Host 'NX-OS Testbed': task 'main' failed with traceback:
+Traceback (most recent call last):
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/orodeji/Documents/Personal_Projects/Network-Deployment-Automation/Network_Configuration/pyats/vlan_stp_verify.py", line 16, in main
+    data_template = task.run(task=template_file,
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2021-04-02 11:30:13,188 -  nornir.core -     INFO -        run() - Running task 'main' with args {} on 1 hosts
+2021-04-02 11:30:13,191 - nornir.core.task -    ERROR -      start() - Host 'NX-OS Testbed': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 42, in template_file
+    t = env.get_template(template)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 197, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: verify_vlan
+
+2021-04-02 11:30:13,192 - nornir.core.task -    ERROR -      start() - Host 'NX-OS Testbed': task 'main' failed with traceback:
+Traceback (most recent call last):
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/orodeji/Documents/Personal_Projects/Network-Deployment-Automation/Network_Configuration/pyats/vlan_stp_verify.py", line 16, in main
+    data_template = task.run(task=template_file,
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2021-04-02 11:31:40,330 -  nornir.core -     INFO -        run() - Running task 'main' with args {} on 1 hosts
+2021-04-02 11:31:40,334 - nornir.core.task -    ERROR -      start() - Host 'NX-OS Testbed': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 42, in template_file
+    t = env.get_template(template)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 197, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: verify_vlan
+
+2021-04-02 11:31:40,335 - nornir.core.task -    ERROR -      start() - Host 'NX-OS Testbed': task 'main' failed with traceback:
+Traceback (most recent call last):
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/orodeji/Documents/Personal_Projects/Network-Deployment-Automation/Network_Configuration/pyats/vlan_stp_verify.py", line 16, in main
+    data_template = task.run(task=template_file,
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2021-04-02 11:32:40,336 -  nornir.core -     INFO -        run() - Running task 'main' with args {} on 1 hosts
+2021-04-02 11:32:40,338 - nornir.core.task -    ERROR -      start() - Host 'NX-OS Testbed': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 42, in template_file
+    t = env.get_template(template)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 197, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: verify_vlan
+
+2021-04-02 11:32:40,339 - nornir.core.task -    ERROR -      start() - Host 'NX-OS Testbed': task 'main' failed with traceback:
+Traceback (most recent call last):
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/orodeji/Documents/Personal_Projects/Network-Deployment-Automation/Network_Configuration/pyats/vlan_stp_verify.py", line 16, in main
+    data_template = task.run(task=template_file,
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2021-04-02 11:37:45,803 -  nornir.core -     INFO -        run() - Running task 'main' with args {} on 1 hosts
+2021-04-02 11:37:45,805 - nornir.core.task -    ERROR -      start() - Host 'NX-OS Testbed': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 42, in template_file
+    t = env.get_template(template)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 197, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: verify_vlan
+
+2021-04-02 11:37:45,806 - nornir.core.task -    ERROR -      start() - Host 'NX-OS Testbed': task 'main' failed with traceback:
+Traceback (most recent call last):
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/orodeji/Documents/Personal_Projects/Network-Deployment-Automation/Network_Configuration/pyats/vlan_stp_verify.py", line 16, in main
+    data_template = task.run(task=template_file,
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2021-04-02 11:41:35,496 -  nornir.core -     INFO -        run() - Running task 'main' with args {} on 1 hosts
+2021-04-02 11:41:35,499 - nornir.core.task -    ERROR -      start() - Host 'NX-OS Testbed': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 42, in template_file
+    t = env.get_template(template)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/orodeji/.local/lib/python3.8/site-packages/jinja2/loaders.py", line 197, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: verify_vlan
+
+2021-04-02 11:41:35,499 - nornir.core.task -    ERROR -      start() - Host 'NX-OS Testbed': task 'main' failed with traceback:
+Traceback (most recent call last):
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/orodeji/Documents/Personal_Projects/Network-Deployment-Automation/Network_Configuration/pyats/vlan_stp_verify.py", line 16, in main
+    data_template = task.run(task=template_file,
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2021-04-02 13:02:01,279 -  nornir.core -     INFO -        run() - Running task 'verify_vlan' with args {} on 1 hosts
+2021-04-02 13:03:26,656 - nornir.core.task -    ERROR -      start() - Host 'NX-OS Testbed': task 'verify_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "src/unicon/statemachine/statemachine.py", line 720, in unicon.statemachine.statemachine.StateMachine.go_to
+  File "src/unicon/statemachine/statetransition.py", line 478, in unicon.statemachine.statetransition.AnyStateTransition.do_transitions
+  File "src/unicon/eal/dialogs.py", line 459, in unicon.eal.dialogs.Dialog.process
+  File "src/unicon/eal/dialog_processor.py", line 317, in unicon.eal.dialog_processor.SimpleDialogProcessor.process
+  File "src/unicon/eal/dialog_processor.py", line 276, in unicon.eal.dialog_processor.SimpleDialogProcessor.timeout_handler
+unicon.core.errors.TimeoutError: timeout occurred:
+              timeout value: 60
+              last_command: '\r\r'
+             pattern: ['^.*?% (Bad passwords|Access denied|Authentication failed)', '^.*Login incorrect', '^.*([Uu]sername|[Ll]ogin): ?$', '^.*User Access Verification', '^.*[Pp]assword( for )?(\\S+)?: ?$', '^(.*)Kerberos:\\s*No default realm defined for Kerberos!', 'Password OK\\s*$', '^.*Enter passphrase for key .*?:\\s*?', '^.*(initial|basic) configuration dialog\\s?\\??\\s*((\\[yes.*\\])|(\\(yes/no\\))|(\\(yes/no\\)\\s*(\\[y\\]))):', 'Would you like to enter basic management setup\\? \\[yes/no\\]:', 'Escape character is .*\\n', '^.*RETURN to get started', 'Are you sure you want to continue connecting \\(yes/no(/\\[fingerprint\\])?\\)', '^.*(Connection refused|Connection reset by peer|Broken pipe|Network is down|closed by remote host)', 'Received disconnect from .*:', 'Hit Enter to proceed:', '^(.*?)Press Ctrl\\+x to Exit the session', '^(.*?)Connected.', '^.*?%\\w+-\\d+-\\w+:.*$', 'Do you want to enable admin vdc\\s?\\(yes\\/no\\)\\s?\\[n\\]\\:', '^.*Boot up system with default vdc \\(yes\\/no\\) \\[y\\]\\:', '^.*Enable the SNMP port\\? \\(yes\\/no\\) \\[y\\]:', '^.*(Enter|Confirm) the password for .*admin', '^.*Do you want to enforce secure password standard \\(yes\\/no\\) \\[y\\]\\:', 'Abort( Power On)? Auto Provisioning .*:', 'Uncommitted changes found, commit them before exiting \\(yes/no/cancel\\)\\? \\[cancel\\]\\s*$', '^(.*?)module-\\d+(\\(\\w+-elam-insel\\d+\\))?#\\s*?$', '^(.*?)module-\\d+(\\(\\w+-elam\\))?#\\s*?$', '^(.*?)module-\\d+#\\s*?$', '^(.*)\\[\\S+@guestshell\\s+.*\\][#\\$]\\s?$', '^(.*)loader\\s*>', '^(.*)(bash-\\S+|Linux)[#\\$]\\s?$', '^(?P<hostname00>.*)(\\(maint-mode\\))?\\(.*(con|cfg|ipsec-profile)\\S*\\)#\\s?$', '^(.*?)([Rr]outer|[Ss]witch|(?P<hostname00>([^# \\t\\n\\r\\f\\v]+)))(\\(standby\\))?(\\(maint-mode\\))?#\\s?$', '^.*--\\s?[Mm]ore\\s?--.*$']
+             buffer:'\r\n\r\n'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/unicon/bases/connection.py", line 744, in unicon.bases.connection.Connection.connect
+  File "src/unicon/bases/routers/connection_provider.py", line 191, in unicon.bases.routers.connection_provider.BaseSingleRpConnectionProvider.connect
+  File "src/unicon/bases/routers/connection_provider.py", line 218, in unicon.bases.routers.connection_provider.BaseSingleRpConnectionProvider.establish_connection
+  File "src/unicon/statemachine/statemachine.py", line 723, in unicon.statemachine.statemachine.StateMachine.go_to
+unicon.core.errors.StateMachineError: Failed while bringing device to "any" state
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/orodeji/Documents/Personal_Projects/Network-Deployment-Automation/Network_Configuration/pyats/vlan_stp_verify.py", line 15, in verify_vlan
+    device.connect(log_stdout=False)
+  File "src/genie/conf/base/device.py", line 624, in genie.conf.base.device.Device.connect
+  File "src/pyats/connections/manager.py", line 412, in pyats.connections.manager.ConnectionManager.connect
+  File "src/unicon/bases/connection.py", line 750, in unicon.bases.connection.Connection.connect
+unicon.core.errors.ConnectionError: failed to connect to NX-OS Testbed
+Failed while bringing device to "any" state
+
+2021-04-02 16:58:00,853 -  nornir.core -     INFO -        run() - Running task 'verify_vlan' with args {} on 1 hosts
+2021-04-02 16:58:25,567 - nornir.core.task -    ERROR -      start() - Host 'NX-OS Testbed': task 'verify_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "src/unicon/statemachine/statemachine.py", line 720, in unicon.statemachine.statemachine.StateMachine.go_to
+  File "src/unicon/statemachine/statetransition.py", line 484, in unicon.statemachine.statetransition.AnyStateTransition.do_transitions
+  File "src/unicon/eal/dialogs.py", line 459, in unicon.eal.dialogs.Dialog.process
+  File "src/unicon/eal/dialog_processor.py", line 317, in unicon.eal.dialog_processor.SimpleDialogProcessor.process
+  File "src/unicon/eal/dialog_processor.py", line 264, in unicon.eal.dialog_processor.SimpleDialogProcessor.timeout_handler
+unicon.core.errors.TimeoutError: Prompt timeout occured, please check the hostname
+                                 hostname: NX-OS Testbed
+                                 timeout value: 10
+                                 last_command: '\r'
+                                 pattern: ['Uncommitted changes found, commit them before exiting \\(yes/no/cancel\\)\\? \\[cancel\\]\\s*$', '^(.*?)module-\\d+(\\(\\w+-elam-insel\\d+\\))?#\\s*?$', '^(.*?)module-\\d+(\\(\\w+-elam\\))?#\\s*?$', '^(.*?)module-\\d+#\\s*?$', '^(.*)\\[\\S+@guestshell\\s+.*\\][#\\$]\\s?$', '^(.*)loader\\s*>', '^(.*)(bash-\\S+|Linux)[#\\$]\\s?$', '^(?P<hostname00>.*)(\\(maint-mode\\))?\\(.*(con|cfg|ipsec-profile)\\S*\\)#\\s?$', '^(.*?)([Rr]outer|[Ss]witch|NX-OS Testbed)(\\(standby\\))?(\\(maint-mode\\))?#\\s?$', '^.*--\\s?[Mm]ore\\s?--.*$']
+                                 buffer:'\r\r\n\rsbx-n9kv-ao# '
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/unicon/bases/connection.py", line 744, in unicon.bases.connection.Connection.connect
+  File "src/unicon/bases/routers/connection_provider.py", line 196, in unicon.bases.routers.connection_provider.BaseSingleRpConnectionProvider.connect
+  File "src/unicon/bases/routers/connection_provider.py", line 263, in unicon.bases.routers.connection_provider.BaseSingleRpConnectionProvider.init_handle
+  File "src/unicon/bases/routers/connection_provider.py", line 119, in unicon.bases.routers.connection_provider.BaseCommonRpConnectionProvider.execute_init_commands
+  File "src/unicon/bases/routers/services.py", line 253, in unicon.bases.routers.services.BaseService.__call__
+  File "src/unicon/bases/routers/services.py", line 164, in unicon.bases.routers.services.BaseService.pre_service
+  File "src/unicon/statemachine/statemachine.py", line 793, in unicon.statemachine.statemachine.StateMachine.detect_state
+  File "src/unicon/statemachine/statemachine.py", line 723, in unicon.statemachine.statemachine.StateMachine.go_to
+unicon.core.errors.StateMachineError: Failed while bringing device to "any" state
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/orodeji/Documents/Personal_Projects/Network-Deployment-Automation/Network_Configuration/pyats/vlan_stp_verify.py", line 15, in verify_vlan
+    device.connect(log_stdout=False)
+  File "src/genie/conf/base/device.py", line 624, in genie.conf.base.device.Device.connect
+  File "src/pyats/connections/manager.py", line 412, in pyats.connections.manager.ConnectionManager.connect
+  File "src/unicon/bases/connection.py", line 750, in unicon.bases.connection.Connection.connect
+unicon.core.errors.ConnectionError: failed to connect to NX-OS Testbed
+Failed while bringing device to "any" state
+
+2021-04-02 17:09:23,022 -  nornir.core -     INFO -        run() - Running task 'verify_vlan' with args {} on 1 hosts
+2021-04-02 17:09:48,643 - nornir.core.task -    ERROR -      start() - Host 'NX-OS Testbed': task 'verify_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "src/unicon/statemachine/statemachine.py", line 720, in unicon.statemachine.statemachine.StateMachine.go_to
+  File "src/unicon/statemachine/statetransition.py", line 484, in unicon.statemachine.statetransition.AnyStateTransition.do_transitions
+  File "src/unicon/eal/dialogs.py", line 459, in unicon.eal.dialogs.Dialog.process
+  File "src/unicon/eal/dialog_processor.py", line 317, in unicon.eal.dialog_processor.SimpleDialogProcessor.process
+  File "src/unicon/eal/dialog_processor.py", line 264, in unicon.eal.dialog_processor.SimpleDialogProcessor.timeout_handler
+unicon.core.errors.TimeoutError: Prompt timeout occured, please check the hostname
+                                 hostname: NX-OS Testbed
+                                 timeout value: 10
+                                 last_command: '\r'
+                                 pattern: ['Uncommitted changes found, commit them before exiting \\(yes/no/cancel\\)\\? \\[cancel\\]\\s*$', '^(.*?)module-\\d+(\\(\\w+-elam-insel\\d+\\))?#\\s*?$', '^(.*?)module-\\d+(\\(\\w+-elam\\))?#\\s*?$', '^(.*?)module-\\d+#\\s*?$', '^(.*)\\[\\S+@guestshell\\s+.*\\][#\\$]\\s?$', '^(.*)loader\\s*>', '^(.*)(bash-\\S+|Linux)[#\\$]\\s?$', '^(?P<hostname00>.*)(\\(maint-mode\\))?\\(.*(con|cfg|ipsec-profile)\\S*\\)#\\s?$', '^(.*?)([Rr]outer|[Ss]witch|NX-OS Testbed)(\\(standby\\))?(\\(maint-mode\\))?#\\s?$', '^.*--\\s?[Mm]ore\\s?--.*$']
+                                 buffer:'\r\r\n\rsbx-n9kv-ao# '
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/unicon/bases/connection.py", line 744, in unicon.bases.connection.Connection.connect
+  File "src/unicon/bases/routers/connection_provider.py", line 196, in unicon.bases.routers.connection_provider.BaseSingleRpConnectionProvider.connect
+  File "src/unicon/bases/routers/connection_provider.py", line 263, in unicon.bases.routers.connection_provider.BaseSingleRpConnectionProvider.init_handle
+  File "src/unicon/bases/routers/connection_provider.py", line 119, in unicon.bases.routers.connection_provider.BaseCommonRpConnectionProvider.execute_init_commands
+  File "src/unicon/bases/routers/services.py", line 253, in unicon.bases.routers.services.BaseService.__call__
+  File "src/unicon/bases/routers/services.py", line 164, in unicon.bases.routers.services.BaseService.pre_service
+  File "src/unicon/statemachine/statemachine.py", line 793, in unicon.statemachine.statemachine.StateMachine.detect_state
+  File "src/unicon/statemachine/statemachine.py", line 723, in unicon.statemachine.statemachine.StateMachine.go_to
+unicon.core.errors.StateMachineError: Failed while bringing device to "any" state
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/orodeji/Documents/Personal_Projects/Network-Deployment-Automation/Network_Configuration/pyats/vlan_stp_verify.py", line 15, in verify_vlan
+    device.connect(log_stdout=False)
+  File "src/genie/conf/base/device.py", line 624, in genie.conf.base.device.Device.connect
+  File "src/pyats/connections/manager.py", line 412, in pyats.connections.manager.ConnectionManager.connect
+  File "src/unicon/bases/connection.py", line 750, in unicon.bases.connection.Connection.connect
+unicon.core.errors.ConnectionError: failed to connect to NX-OS Testbed
+Failed while bringing device to "any" state
+
+2021-04-02 17:11:10,238 -  nornir.core -     INFO -        run() - Running task 'verify_vlan' with args {} on 1 hosts
+2021-04-02 17:11:35,251 - nornir.core.task -    ERROR -      start() - Host 'NX-OS Testbed': task 'verify_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "src/unicon/statemachine/statemachine.py", line 720, in unicon.statemachine.statemachine.StateMachine.go_to
+  File "src/unicon/statemachine/statetransition.py", line 484, in unicon.statemachine.statetransition.AnyStateTransition.do_transitions
+  File "src/unicon/eal/dialogs.py", line 459, in unicon.eal.dialogs.Dialog.process
+  File "src/unicon/eal/dialog_processor.py", line 317, in unicon.eal.dialog_processor.SimpleDialogProcessor.process
+  File "src/unicon/eal/dialog_processor.py", line 264, in unicon.eal.dialog_processor.SimpleDialogProcessor.timeout_handler
+unicon.core.errors.TimeoutError: Prompt timeout occured, please check the hostname
+                                 hostname: NX-OS Testbed
+                                 timeout value: 10
+                                 last_command: '\r'
+                                 pattern: ['Uncommitted changes found, commit them before exiting \\(yes/no/cancel\\)\\? \\[cancel\\]\\s*$', '^(.*?)module-\\d+(\\(\\w+-elam-insel\\d+\\))?#\\s*?$', '^(.*?)module-\\d+(\\(\\w+-elam\\))?#\\s*?$', '^(.*?)module-\\d+#\\s*?$', '^(.*)\\[\\S+@guestshell\\s+.*\\][#\\$]\\s?$', '^(.*)loader\\s*>', '^(.*)(bash-\\S+|Linux)[#\\$]\\s?$', '^(?P<hostname00>.*)(\\(maint-mode\\))?\\(.*(con|cfg|ipsec-profile)\\S*\\)#\\s?$', '^(.*?)([Rr]outer|[Ss]witch|NX-OS Testbed)(\\(standby\\))?(\\(maint-mode\\))?#\\s?$', '^.*--\\s?[Mm]ore\\s?--.*$']
+                                 buffer:'\r\r\n\rsbx-n9kv-ao# '
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/unicon/bases/connection.py", line 744, in unicon.bases.connection.Connection.connect
+  File "src/unicon/bases/routers/connection_provider.py", line 196, in unicon.bases.routers.connection_provider.BaseSingleRpConnectionProvider.connect
+  File "src/unicon/bases/routers/connection_provider.py", line 263, in unicon.bases.routers.connection_provider.BaseSingleRpConnectionProvider.init_handle
+  File "src/unicon/bases/routers/connection_provider.py", line 119, in unicon.bases.routers.connection_provider.BaseCommonRpConnectionProvider.execute_init_commands
+  File "src/unicon/bases/routers/services.py", line 253, in unicon.bases.routers.services.BaseService.__call__
+  File "src/unicon/bases/routers/services.py", line 164, in unicon.bases.routers.services.BaseService.pre_service
+  File "src/unicon/statemachine/statemachine.py", line 793, in unicon.statemachine.statemachine.StateMachine.detect_state
+  File "src/unicon/statemachine/statemachine.py", line 723, in unicon.statemachine.statemachine.StateMachine.go_to
+unicon.core.errors.StateMachineError: Failed while bringing device to "any" state
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/orodeji/Documents/Personal_Projects/Network-Deployment-Automation/Network_Configuration/pyats/vlan_stp_verify.py", line 15, in verify_vlan
+    device.connect(log_stdout=False)
+  File "src/genie/conf/base/device.py", line 624, in genie.conf.base.device.Device.connect
+  File "src/pyats/connections/manager.py", line 412, in pyats.connections.manager.ConnectionManager.connect
+  File "src/unicon/bases/connection.py", line 750, in unicon.bases.connection.Connection.connect
+unicon.core.errors.ConnectionError: failed to connect to NX-OS Testbed
+Failed while bringing device to "any" state
+
+2021-04-02 17:13:54,683 -  nornir.core -     INFO -        run() - Running task 'verify_vlan' with args {} on 1 hosts
+2021-04-02 17:14:19,886 - nornir.core.task -    ERROR -      start() - Host 'NX-OS Testbed': task 'verify_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "src/unicon/statemachine/statemachine.py", line 720, in unicon.statemachine.statemachine.StateMachine.go_to
+  File "src/unicon/statemachine/statetransition.py", line 484, in unicon.statemachine.statetransition.AnyStateTransition.do_transitions
+  File "src/unicon/eal/dialogs.py", line 459, in unicon.eal.dialogs.Dialog.process
+  File "src/unicon/eal/dialog_processor.py", line 317, in unicon.eal.dialog_processor.SimpleDialogProcessor.process
+  File "src/unicon/eal/dialog_processor.py", line 264, in unicon.eal.dialog_processor.SimpleDialogProcessor.timeout_handler
+unicon.core.errors.TimeoutError: Prompt timeout occured, please check the hostname
+                                 hostname: NX-OS Testbed
+                                 timeout value: 10
+                                 last_command: '\r'
+                                 pattern: ['Uncommitted changes found, commit them before exiting \\(yes/no/cancel\\)\\? \\[cancel\\]\\s*$', '^(.*?)module-\\d+(\\(\\w+-elam-insel\\d+\\))?#\\s*?$', '^(.*?)module-\\d+(\\(\\w+-elam\\))?#\\s*?$', '^(.*?)module-\\d+#\\s*?$', '^(.*)\\[\\S+@guestshell\\s+.*\\][#\\$]\\s?$', '^(.*)loader\\s*>', '^(.*)(bash-\\S+|Linux)[#\\$]\\s?$', '^(?P<hostname00>.*)(\\(maint-mode\\))?\\(.*(con|cfg|ipsec-profile)\\S*\\)#\\s?$', '^(.*?)([Rr]outer|[Ss]witch|NX-OS Testbed)(\\(standby\\))?(\\(maint-mode\\))?#\\s?$', '^.*--\\s?[Mm]ore\\s?--.*$']
+                                 buffer:'\r\r\n\rsbx-n9kv-ao# '
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/unicon/bases/connection.py", line 744, in unicon.bases.connection.Connection.connect
+  File "src/unicon/bases/routers/connection_provider.py", line 196, in unicon.bases.routers.connection_provider.BaseSingleRpConnectionProvider.connect
+  File "src/unicon/bases/routers/connection_provider.py", line 263, in unicon.bases.routers.connection_provider.BaseSingleRpConnectionProvider.init_handle
+  File "src/unicon/bases/routers/connection_provider.py", line 119, in unicon.bases.routers.connection_provider.BaseCommonRpConnectionProvider.execute_init_commands
+  File "src/unicon/bases/routers/services.py", line 253, in unicon.bases.routers.services.BaseService.__call__
+  File "src/unicon/bases/routers/services.py", line 164, in unicon.bases.routers.services.BaseService.pre_service
+  File "src/unicon/statemachine/statemachine.py", line 793, in unicon.statemachine.statemachine.StateMachine.detect_state
+  File "src/unicon/statemachine/statemachine.py", line 723, in unicon.statemachine.statemachine.StateMachine.go_to
+unicon.core.errors.StateMachineError: Failed while bringing device to "any" state
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/orodeji/Documents/Personal_Projects/Network-Deployment-Automation/Network_Configuration/pyats/vlan_stp_verify.py", line 15, in verify_vlan
+    device.connect()
+  File "src/genie/conf/base/device.py", line 624, in genie.conf.base.device.Device.connect
+  File "src/pyats/connections/manager.py", line 412, in pyats.connections.manager.ConnectionManager.connect
+  File "src/unicon/bases/connection.py", line 750, in unicon.bases.connection.Connection.connect
+unicon.core.errors.ConnectionError: failed to connect to NX-OS Testbed
+Failed while bringing device to "any" state
+
+2021-04-02 17:16:02,230 -  nornir.core -     INFO -        run() - Running task 'verify_vlan' with args {} on 1 hosts
+2021-04-02 17:17:21,795 -  nornir.core -     INFO -        run() - Running task 'verify_vlan' with args {} on 1 hosts
+2021-04-02 17:18:15,145 -  nornir.core -     INFO -        run() - Running task 'verify_vlan' with args {} on 1 hosts
+2021-04-02 19:05:00,560 -  nornir.core -     INFO -        run() - Running task 'verify_vlan' with args {} on 1 hosts
+2021-04-02 19:05:12,147 - nornir.core.task -    ERROR -      start() - Host 'sbx-n9kv-ao': task 'verify_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/orodeji/Documents/Personal_Projects/Network-Deployment-Automation/Network_Configuration/pyats/vlan_stp_verify.py", line 26, in verify_vlan
+    raise Exception(["Vlans not properly configured",result_dict])
+Exception: ['Vlans not properly configured', {'Vlan 10 present': False, 'Vlan 22 present': False, 'Vlan 35 present': False, 'Vlan 40 present': False, 'Vlan 44 present': False}]
+
+2021-04-02 19:06:18,897 -  nornir.core -     INFO -        run() - Running task 'verify_vlan' with args {} on 1 hosts
+2021-04-02 19:06:29,804 - nornir.core.task -    ERROR -      start() - Host 'sbx-n9kv-ao': task 'verify_vlan' failed with traceback:
+Traceback (most recent call last):
+  File "/home/orodeji/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/orodeji/Documents/Personal_Projects/Network-Deployment-Automation/Network_Configuration/pyats/vlan_stp_verify.py", line 26, in verify_vlan
+    raise Exception(["Vlans not properly configured\n",result_dict])
+Exception: ['Vlans not properly configured\n', {'Vlan 10 present': False, 'Vlan 22 present': False, 'Vlan 35 present': False, 'Vlan 40 present': False, 'Vlan 44 present': False}]
+

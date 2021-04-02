@@ -2,6 +2,7 @@ from nornir.core.inventory import ConnectionOptions
 from nornir.core.plugins.inventory import TransformFunctionRegister
 
 creds = {
+    "sbx-n9kv-ao": {"username": "admin", "password": "Admin_1234!"},
     "SW-1": {"username": "admin", "password": "admin"},
     "SW-2": {"username": "admin", "password": "admin"},
     "SW-3": {"username": "admin", "password": "admin"},
